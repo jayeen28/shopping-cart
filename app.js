@@ -1,9 +1,9 @@
 //functions
-function updateCaseNumber(inputId, isAdd) {
-    const caseInput = document.getElementById(inputId);
+function updateCaseNumber(isIncreasing) {
+    const caseInput = document.getElementById('case-input');
     const caseText = caseInput.value;
     const caseNumber = parseInt(caseText);
-    if (isAdd == true) {
+    if (isIncreasing == true) {
         caseInput.value = caseNumber + 1;
     }
     else {
@@ -12,10 +12,9 @@ function updateCaseNumber(inputId, isAdd) {
         }
     }
 }
-
 document.getElementById('case-plus').addEventListener('click', function () {
-    updateCaseNumber('case-input', true);
+    updateCaseNumber(true);
 });
 document.getElementById('case-minus').addEventListener('click', function () {
-    updateCaseNumber('case-input', false);
+    updateCaseNumber(false);
 })
