@@ -1,3 +1,4 @@
+//Created by MD. Jayeen Bin Alam//
 //functions
 //case increase decrease function
 function getInputValue(product) {
